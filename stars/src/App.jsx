@@ -5,8 +5,8 @@ import Home from './Home';
 function App() {
 
   return (
-    <BrowserRouter>
 
+    <BrowserRouter>
     <Routes>
 
 <Route path="/"   element={<Home/>}/>

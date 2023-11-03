@@ -39,11 +39,25 @@
 
 import { FaStar } from "react-icons/fa";
 import "./star.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {useSelector, useDispatch} from 'react-redux' 
+import {getData} from '../Redux/imgSlice'
+
 
 const StarRate = () => {
   const [list] = useState(["red", "green", "orange", "blue"]);
   const [text, setText] = useState("");
+const {imgs} = useSelector((state)=>state.imgSlice)
+console.log(imgs)
+const dispatch = useDispatch()
+
+
+useEffect(()=>{
+dispatch(getData())
+
+
+}, [dispatch])
+
 
   let searchResault = list.filter((item) =>
     item.toLowerCase().includes(text.toLowerCase())
@@ -98,6 +112,17 @@ const StarRate = () => {
           </div>
         );
       })}
+
+      <footer>
+      {imgs.map((item, i)=>{
+if (i<=2)
+return  (
+
+
+<span key={item.id}>{item.title}</span>)
+
+      })}
+      </footer>
     </div>
   );
 };
