@@ -119,8 +119,7 @@ if (i<=2)
 return  (
 
 
-<span key={item.id}>{item.title}</span>)
-
+<img src={item.url}></img>
       })}
       </footer>
     </div>
