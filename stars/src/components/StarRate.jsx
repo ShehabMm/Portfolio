@@ -114,13 +114,22 @@ dispatch(getData())
       })}
 
       <footer>
+        <button>Prev</button>
+
       {imgs.map((item, i)=>{
 if (i<=2)
 return  (
+<div>
+<img style={{position:"absolute"}}  key={item.id} src={item.url}/>
 
 
-<img src={item.url}></img>
+</div>
+
+)
+
       })}
+      <button>Next</button>
+
       </footer>
     </div>
   );
