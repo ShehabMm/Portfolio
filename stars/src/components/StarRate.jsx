@@ -1,62 +1,39 @@
-// import { FaStar } from "react-icons/fa";
-// import { useState } from "react";
-// import './star.css'
-// const StarRate = () => {
-//   const [ratings, setRatings] = useState(null);
-
-//   return (
-//     <div className="main"style={{ display: "flex", flexDirection: "row", gap: 6 }}>
-
-//       {[...Array(5)].map((item, index) => {
-//         const currentRate = index + 1;
-//         return (
-//           <div  key={item}>
-//             <label>
-//               <input
-//                 style={{ display: "none" }}
-//                 value={currentRate}
-//                 type="radio"
-//                 name="rate"
-//                 onClick={() => {
-//                   setRatings(currentRate);
-//                 }}
-//               />
-
-//               <FaStar className="star"
-//                 size={30}
-//                 color={currentRate <= (null || ratings) ? "yellow" : "black"}
-//               />
-//             </label>
-
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// };
-
-// export default StarRate;
 
 import { FaStar } from "react-icons/fa";
 import "./star.css";
 import { useState, useEffect } from "react";
-import {useSelector, useDispatch} from 'react-redux' 
-import {getData} from '../Redux/imgSlice'
-
+import { useSelector, useDispatch } from 'react-redux'
+import { getData } from '../Redux/imgSlice'
+import axios from 'axios'
 
 const StarRate = () => {
   const [list] = useState(["red", "green", "orange", "blue"]);
   const [text, setText] = useState("");
-const {imgs} = useSelector((state)=>state.imgSlice)
-console.log(imgs)
-const dispatch = useDispatch()
+  const { imgs } = useSelector((state) => state.imgSlice)
+  const [contain, setContain] = useState([]);
+  const dispatch = useDispatch()
+const sorted = contain.map((item)=> item.first_name ).sort((a,b)=>a.localeCompare(b))
+console.log(sorted)
 
 
-useEffect(()=>{
-dispatch(getData())
+  const getSata = async () => {
+
+    try {
+      const data = await axios.get('https://reqres.in/api/users')
+      setContain(data.data.data)
+    } catch (error) {
+      console.log(error.message);
+    }
 
 
-}, [dispatch])
+  }
+
+
+  useEffect(() => {
+    dispatch(getData())
+    getSata()
+
+  }, [dispatch])
 
 
   let searchResault = list.filter((item) =>
@@ -113,24 +90,25 @@ dispatch(getData())
         );
       })}
 
-      <footer>
-        <button>Prev</button>
 
-      {imgs.map((item, i)=>{
-if (i<=2)
-return  (
-<div>
-<img style={{position:"absolute"}}  key={item.id} src={item.url}/>
+      <div>
+        {sorted.map((item) => {
+
+          return (
+            <div key={Math.random()}>
+
+              <h2 >{item}</h2>
 
 
-</div>
+            </div>
+          )
 
-)
 
-      })}
-      <button>Next</button>
+        })}
 
-      </footer>
+
+
+      </div>
     </div>
   );
 };
