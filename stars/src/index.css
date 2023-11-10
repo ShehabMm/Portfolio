@@ -3,6 +3,7 @@
 html {
 
   font-family: 'Roboto', sans-serif !important;
+  letter-spacing: 0.1px;
 }
 
 
@@ -33,6 +34,9 @@ box-sizing: border-box !important;
   --primary: #000;
   --secondary:rgb(24 24 27 );
   --border:rgba(63,63,70,0.4);
+  --title:rgb(244 244 245);
+  --subtitle:rgb(161 161 170);
+  --bgheader:rgb(39,39,42);
 }
 
 a {
@@ -116,3 +120,14 @@ margin:3rem 0;
 
 
 }
+
+li{
+
+  list-style: none;
+}
+
+a{
+
+  color:initial;
+}
+
