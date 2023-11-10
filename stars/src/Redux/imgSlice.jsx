@@ -8,7 +8,7 @@ const {rejectWithValue} = ThunkAPI
 
 
 try {
-  const data = await axios.get('https://jsonplaceholder.typicode.com/photos')
+  const data = await axios.get('https://jsonplaceholder.typicode.com/todos/')
   return data.data
 
 }
@@ -23,28 +23,26 @@ catch (error) {
 const initialState = {imgs:[], error:null}
 
 const imgSlice = createSlice({
-name:"shehab", 
-initialState, 
-extraReducers:(builder)=>{
-builder.addCase(getData.pending, ()=>{})
-builder.addCase(getData.fulfilled, (state, action)=>{
-  state.imgs = action.payload
-  console.log(action.payload);
+  name: "shehab",
+  initialState,
+  extraReducers: (builder) => {
+    builder.addCase(getData.pending, () => { });
+    builder.addCase(getData.fulfilled, (state, action) => {
+      state.imgs = action.payload;
+      console.log(action.payload);
 
-})
-builder.addCase(getData.rejected, (state)=>{
+    });
+    builder.addCase(getData.rejected, (state) => {
 
-  state.error = true
-  console.log(state.error);
-})
-
-
-
-
-}
+      state.error = true;
+      console.log(state.error);
+    });
 
 
 
+
+  },
+  reducers: undefined
 })
 
 export default imgSlice.reducer

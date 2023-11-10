@@ -6,10 +6,14 @@ export const getData = createAsyncThunk("newUser", async(id, ThunkAPI)=>{
 
 const{rejectWithValue} = ThunkAPI
 try {
-  const data = await axios.get("https://jsonplaceholder.typicode.com/users")
+  const data = await axios.get('https://jsonplaceholder.typicode.com/posts')
+
   return data.data
 
-} catch (error) {
+}
+
+
+catch (error) {
   rejectWithValue(error)
 
 }
@@ -17,33 +21,36 @@ try {
 })
 
 
-const initialState = {load:true, allUsers:[]}
+const initialState = {load:true,  error:null,  what:[]}
+
 const usersSlice = createSlice({
-name:"shehab", 
-initialState, 
-extraReducers:(builder)=>{
+  name: "shehabNew",
+  initialState,
 
-  builder.addCase(getData.pending, (state)=>{
+  extraReducers: (builder) => {
 
-state.load = true
+    builder.addCase(getData.pending, (state) => {
 
-  })
-  builder.addCase(getData.fulfilled, (state, action )=>{
+      state.load = true;
 
-
-    state.allUsers = action.payload
-    console.log(action.payload)
-  })
-  builder.addCase(getData.rejected, (state)=>{
-    state.load = false
-
-  })
+    });
+    builder.addCase(getData.fulfilled, (state, action) => {
 
 
-}
+      state.what = action.payload;
+      console.log(action.payload);
+    });
 
 
 
+    builder.addCase(getData.rejected, (state) => {
+      state.load = false;
+
+    });
+
+
+  },
+  reducers: null
 })
 
 
