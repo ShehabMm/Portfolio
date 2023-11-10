@@ -2,7 +2,12 @@ import './Header.css'
 const Header = () => {
   return (
     <header>
-      <div></div>
+            <button className='show'>
+Show
+      </button>
+
+      <div/>
+
       <nav>
 
 <ul>

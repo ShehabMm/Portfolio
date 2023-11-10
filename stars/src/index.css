@@ -1,42 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 html {
-
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   letter-spacing: 0.1px;
 }
 
-
 * {
   margin: 0 !important;
-
   padding: 0 !important;
-box-sizing: border-box !important;
- 
-
+  box-sizing: border-box !important;
 }
-*, *:before, *:after {box-sizing: inherit;} 
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   --primary: #000;
-  --secondary:rgb(24 24 27 );
-  --border:rgba(63,63,70,0.4);
-  --title:rgb(244 244 245);
-  --subtitle:rgb(161 161 170);
-  --bgheader:rgb(39,39,42);
+  --secondary: rgb(24 24 27);
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --bgheader: rgb(39, 39, 42);
+  --blue:rgb(93,188,252)
 }
 
 a {
@@ -98,36 +97,25 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-
-
-
 }
 
 .container {
-
   border: 2px solid var(--border);
-width: 80%;
-margin-right: auto;
-margin-left: auto;
-background-color: var(--secondary);
-
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--secondary);
 }
 
-.divider{
-
-border-bottom:1px solid var(--border);
-margin:3rem 0;
-
-
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
 }
 
-li{
-
+li {
   list-style: none;
 }
 
-a{
-
-  color:initial;
+a {
+  color: initial;
 }
-
