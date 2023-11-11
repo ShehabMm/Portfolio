@@ -3,10 +3,11 @@ header ul {
   gap: 16px;
   justify-content: center;
 }
+
 header ul li a {
   color: var(--title);
-  transition:0.2s all ease-in-out;
-  opacity:0.9;
+  transition: 0.2s all ease-in-out;
+  opacity: 0.9;
   font-size: 0.88rem;
   font-weight: 500;
 
@@ -17,6 +18,7 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-top: 1.2rem !important;
+
 }
 
 header button {
@@ -25,33 +27,68 @@ header button {
 
 header nav {
   background-color: var(--bgheader) !important;
-  padding:0.77rem 1.6rem !important;
+  padding: 0.77rem 1.6rem !important;
   border-radius: 22px !important;
-  box-shadow:1px 1px 2px red ;
+  box-shadow: 1px 1px 2px red;
 }
 
 header ul li a:hover {
-opacity:1;
-color:var(--blue);
+  opacity: 1;
+  color: var(--blue);
 }
 
 
-@media (max-width:700px){
-  header nav{
-    display:none;
+@media (max-width:700px) {
+  header nav {
+    display: none;
   }
 
 
 }
 
-@media(min-width:700px){
-header .show{
+@media(min-width:700px) {
+  header .show {
 
-display:none;
+    display: none;
+
+  }
+
+
 
 }
 
 
+.popUp {
+  border: 2px solid rgb(38, 32, 32);
+  width: 80%;
+  height: 40vh;
+  position: fixed;
+  top: 5rem;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 50;
+  animation:move 0.7s ; 
+}
+
+.popUp button {
+
+  position: absolute;
+  right: 1rem;
 
 }
 
+@keyframes move {
+  0% {
+    scale: 0
+  }
+
+  60%{
+
+    scale:1.2
+  }
+
+  100% {
+    scale: 1
+  }
+}
