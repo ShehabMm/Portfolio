@@ -6,6 +6,7 @@ const [showModel, setshowModel] = useState(false);
 
   return (
     <header>
+<div className="icon-menu"></div>
       <button className="show"  onClick={()=>{
 
 setshowModel(!showModel)
@@ -15,7 +16,7 @@ setshowModel(!showModel)
       <div />
 
       <nav>
-        <ul >
+        <ul  >
           <li>
             <a href="">about</a>
           </li>
@@ -23,27 +24,24 @@ setshowModel(!showModel)
             <a href="">Articles</a>
           </li>
           <li>
-          
-            <a href="">Projects</a>
+          <a href="">Projects</a>
           </li>
           <li>
             <a href="">Speaking</a>
           </li>
           <li>
-      
-            <a href="">Contact</a>
+          <a href="">Contact</a>
           </li>
         </ul>
       </nav>
       <button>light</button>
 
 {showModel &&               (        <div className="popUp">
-<button onClick={()=>{
+<button  onClick={()=>{
 
-setshowModel(false)
-
-
-}}>X</button>
+setshowModel(false)}}> 
+X
+</button>
 <ul style={{flexDirection:'column'}}>
     <li>
       <a href="">about</a>
