@@ -1,20 +1,36 @@
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?jpt7my');
+  src:  url('fonts/icomoon.eot?jpt7my#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jpt7my') format('truetype'),
+    url('fonts/icomoon.woff?jpt7my') format('woff'),
+    url('fonts/icomoon.svg?jpt7my#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-  font-size: 32px;
-  color: red;
-}
-========================================== */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-.icon-moon-o {
-  width: 0.8232421875em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-moon-stroke:before {
+  content: "\e900";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
 }
