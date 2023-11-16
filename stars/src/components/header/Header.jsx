@@ -33,10 +33,10 @@ setshowModel(!showModel)
           </li>
         </ul>
       </nav>
-      <button className="icon-moon-stroke"/>
+      <button className="icon-moon-o"/>
 
 {showModel &&               (        <div className="popUp">
-<button className="icon-cancel-circle"  onClick={()=>{
+<button className="icon-x"  onClick={()=>{
 
 setshowModel(false)}}/> 
 

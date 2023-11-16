@@ -25,14 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-moon-stroke:before {
-  content: "\e900";
+
+
+.icon-moon-o:before {
+  content: "\f186";
 }
 .icon-menu:before {
   content: "\e9bd";
 }
-.icon-cancel-circle:before {
-  content: "\ea0d";
+.icon-x:before {
+  content: "\e900";
 }
 .icon-verified:before {
   content: "\e902";
@@ -69,7 +71,7 @@
 }
 
 
-.icon-moon-stroke, .icon-menu, .icon-cancel-circle{
+.icon-moon-o, .icon-menu, .icon-x{
 background-color: var(--bgheader);
 height: 2.4rem;
 width:2.4rem;
