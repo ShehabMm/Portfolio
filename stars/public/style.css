@@ -34,3 +34,14 @@
 .icon-cancel-circle:before {
   content: "\ea0d";
 }
+
+
+.icon-moon-stroke, .icon-menu, .icon-cancel-circle{
+background-color: var(--bgheader);
+height: 2.4rem;
+width:2.4rem;
+border-radius: 50%;
+justify-content: center;
+color:var(--subtitle);
+border:1px solid rgba(244, 165, 69, 0.249);
+}
