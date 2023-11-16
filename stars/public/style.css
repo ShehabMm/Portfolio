@@ -34,6 +34,39 @@
 .icon-cancel-circle:before {
   content: "\ea0d";
 }
+.icon-verified:before {
+  content: "\e902";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-x:before {
+  content: "\e900";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-sun:before {
+  content: "\e9d4";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
 
 
 .icon-moon-stroke, .icon-menu, .icon-cancel-circle{
