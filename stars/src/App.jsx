@@ -13,13 +13,13 @@ function App() {
       <div className="container">
         <Header />
         <div className="divider" />
-        {/* <Hero />
+     <Hero />
         <div className="divider" />
         <MainContent />
         <div className="divider" />
         <Contact />
         <div className="divider" />
-        <Footer /> */}
+        <Footer /> 
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
