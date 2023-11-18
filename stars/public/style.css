@@ -80,3 +80,10 @@ justify-content: center;
 color:var(--subtitle);
 border:1px solid rgba(244, 165, 69, 0.249);
 }
+
+
+.icon-verified{
+
+color: rgb(0, 255, 255) ;
+}
+
