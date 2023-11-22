@@ -16,7 +16,7 @@ section {
   margin-top: 5rem !important;
   border: 2px solid red;
   height: 50vh;
-
+overflow: hidden;
 }
 section .article-p{
 
@@ -28,7 +28,6 @@ article h2{
 
 color:var(--title);
 margin-bottom: 2rem !important;
-
 }
 
 section .Right-section {
@@ -41,5 +40,15 @@ section .Right-section {
 article p{
 
 margin-bottom: 50px !important;
+
+}
+
+.ico:hover{
+
+font-size:1.5rem;
+transition:all 0.3s ease-in-out;
+cursor:pointer;
+color:goldenrod;
+
 
 }

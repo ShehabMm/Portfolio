@@ -1,0 +1,27 @@
+.main-content{
+
+display:flex;
+gap:3rem;
+
+
+}
+
+.main-content .right{
+
+flex-grow: 1;
+
+}
+
+
+.main-content .left{
+
+display:flex;
+flex-direction: column;
+  
+  }
+
+  .main-content .left button{
+
+background-color: azure;
+
+  }

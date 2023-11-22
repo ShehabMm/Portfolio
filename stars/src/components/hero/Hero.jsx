@@ -20,10 +20,10 @@ const Hero = () => {
             <br /> MUI, Tailwind, Wordpress, Elementor, Woocommerce
           </p>
           <div style={{display:'flex', gap:20, }}>
-          <div  className="icon-twitter"></div>
-          <div className="icon-instagram"></div>
-          <div className="icon-github"></div>
-          <div className="icon-linkedin"></div>
+          <div  className="icon-twitter ico"></div>
+          <div className="icon-instagram ico"></div>
+          <div className="icon-github ico"></div>
+          <div className="icon-linkedin ico"></div>
           </div>
         </article>
       </div>

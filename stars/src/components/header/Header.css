@@ -69,6 +69,7 @@ header ul li a:hover {
   margin-right: auto;
   z-index: 50;
   animation:move 0.7s ; 
+  backdrop-filter:blur(2px) ;
 }
 
 .popUp button {
