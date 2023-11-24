@@ -1,29 +1,22 @@
 .main-content {
-
   display: flex;
   gap: 3rem;
-
-
+  align-items: start;
 }
 
 .main-content .right {
-
   flex-grow: 1;
-
 }
 
-
 .main-content .left {
-
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-
-
+  margin-left: 1rem !important;
+  border: 2px solid red;
 }
-
 
 .main-content .left button {
   color: rgb(136, 136, 136);
@@ -31,14 +24,52 @@
   background-color: rgb(29, 29, 29) !important;
   padding: 0.3rem !important;
   width: 150px;
-  border:1px solid 213547;
+  border: 1px solid #213547;
+}
+
+.main-content .left button:hover {
+  color: var(--title);
+  border: 3px solid #30303e;
+}
+
+.main-content .left button.active {
+  color: var(--title);
+  border: 3px solid #30303e;
+  letter-spacing: 0.1rem;
+}
+
+.main-content .right article {
+  border: 2px solid red;
+
+
+
+}
+.main-content .right article img{
+width:100%;
+height: 50%;
+  
+}
+
+
+.links-social{
+
+  display: flex;
+  justify-content: space-between;
+  margin:1rem !important ;
 
 }
 
-.main-content .left button:hover{
-
-  color:var(--title);
-
-
+.inner-parts{
+display:flex;
+gap:0.5rem;
 }
 
+.links-social:hover .icon-link,.icon-github,.icon-arrow-right2{
+
+cursor: pointer;
+}
+
+.box{
+color:var(--subtitle)
+  width:80%;
+}
