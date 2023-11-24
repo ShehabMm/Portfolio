@@ -6,6 +6,9 @@
 
 .main-content .right {
   flex-grow: 1;
+  flex-wrap: wrap;
+  height: 1000px;
+  gap: 1rem;
 }
 
 .main-content .left {
@@ -15,6 +18,8 @@
   align-items: center;
   gap: 1rem;
   margin-left: 1rem !important;
+  border:2px solid red;
+  min-width: 220px;
 }
 
 .main-content .left button {
@@ -42,10 +47,8 @@
   transition: all 0.3s;
   border-radius: 5px;
   width: 320px;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0.05)
-  );
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05));
 }
 
 .main-content .right article:hover {
@@ -84,7 +87,6 @@
 .box {
   color: var(--subtitle);
   width: 80%;
-  overflow: hidden;
   padding-left: 1rem !important;
 }
 

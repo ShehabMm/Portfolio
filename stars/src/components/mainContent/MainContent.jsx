@@ -12,7 +12,7 @@ const MainContent = () => {
 
       <section className="right">
 
-{ ["aa", "bb", "cc"].map((item)=>{
+{ ["aa", "bb", "cc", "dd","ee"].map((item)=>{
 
 
 return(
