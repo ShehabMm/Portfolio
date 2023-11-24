@@ -119,3 +119,8 @@ linka:hover {
 .arrow20 a {
   color: var(--blue);
 }
+
+
+@media (max-width:780px) {
+  
+}
