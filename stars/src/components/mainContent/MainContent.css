@@ -1,23 +1,29 @@
 .main-content {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   align-items: start;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  margin-bottom: 2rem !important;
+  overflow: hidden;
+  margin-top: 1rem !important;
 }
 
 .main-content .right {
   flex-grow: 1;
+  display: flex;
+  width: 1000px;
   flex-wrap: wrap;
-  height: 1000px;
-  gap: 1rem;
+  column-gap: 3rem;
 }
 
 .main-content .left {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 1rem;
-  margin-left: 1rem !important;
   min-width: 220px;
 }
 
@@ -46,8 +52,11 @@
   transition: all 0.3s;
   border-radius: 5px;
   width: 320px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.05));
+  margin-bottom: 2rem !important;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
 }
 
 .main-content .right article:hover {
@@ -59,7 +68,7 @@
 
 .main-content .right {
   flex-grow: 1;
-  max-height: 100vh ;
+  max-height: 100vh;
   overflow: visible;
 }
 
@@ -121,57 +130,43 @@ linka:hover {
   color: var(--blue);
 }
 
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+  }
 
+  .main-content .right {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+  }
 
+  .left {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    height: 200px;
+  }
 
-@media (max-width:700px) {
-  
-.main-content{
-flex-direction: column;
-align-items: center;
-gap:0.1rem;
-
+  .left button {
+    margin: 0 !important;
+  }
 }
 
-.right{
+@media (max-width: 430px) {
+  .right,
+  article,
+  .box,
+  .right img {
+    min-width: 50px !important;
+    max-width: 250px !important;
+    font-size: 0.5rem;
+    overflow: hidden !important;
+    width: 100%;
+  }
 
-  text-align: center;
-  justify-content: center;
-}
-.left{
-flex-direction: row !important;
-flex-wrap: wrap;
-height: 200px;;
-
-
-}
-
-.left button{
-
-margin:0 !important;
-
-}
-
-}
-
-@media (max-width:430px){
-
-  .right ,article , .box, .right img{
-
-min-width:50px !important;
-max-width:250px !important;
-font-size: 0.5rem;
-overflow: hidden !important;
-
-}
-.links-social {
-
-display:none;
-
-}
-
-
-
-
-
+  .links-social {
+    display: none;
+  }
 }

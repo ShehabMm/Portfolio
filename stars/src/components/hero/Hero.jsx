@@ -19,7 +19,7 @@ const Hero = () => {
             I am an expert in HTML, CSS, JS, Reactjs,ReduxToolkit,
             <br /> MUI, Tailwind, Wordpress, Elementor, Woocommerce
           </p>
-          <div style={{display:'flex', gap:20, }}>
+          <div  className="sss"style={{display:'flex', gap:20, }}>
           <div  className="icon-twitter ico"></div>
           <div className="icon-instagram ico"></div>
           <div className="icon-github ico"></div>
