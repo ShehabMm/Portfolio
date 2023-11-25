@@ -18,7 +18,6 @@
   align-items: center;
   gap: 1rem;
   margin-left: 1rem !important;
-  border:2px solid red;
   min-width: 220px;
 }
 
@@ -60,6 +59,8 @@
 
 .main-content .right {
   flex-grow: 1;
+  max-height: 100vh ;
+  overflow: visible;
 }
 
 .main-content .right article img {
@@ -121,6 +122,46 @@ linka:hover {
 }
 
 
-@media (max-width:780px) {
+
+
+@media (max-width:700px) {
   
+.main-content{
+flex-direction: column;
+align-items: center;
+gap:0.1rem;
+
+}
+
+.right{
+
+  text-align: center;
+  justify-content: center;
+}
+.left{
+flex-direction: row !important;
+flex-wrap: wrap;
+height: 200px;;
+
+
+}
+
+.left button{
+
+margin:0 !important;
+
+}
+
+}
+
+@media (max-width:430px){
+
+  .right {
+
+min-width:150px !important;
+
+
+}
+
+
 }
