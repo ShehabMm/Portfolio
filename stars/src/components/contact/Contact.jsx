@@ -13,10 +13,15 @@ const Contact = () => {
       </article>
       <form>
         <label htmlFor="email">Email Address</label>
-        <input required  type="email" id="email" placeholder="Email Address"></input>
+        <input
+          required
+          type="email"
+          id="email"
+          placeholder="Email Address"
+        ></input>
         <div className="flex">
           <label htmlFor="text">Your message</label>
-          <textarea required  placeholder="Message" name="" id="text">
+          <textarea required placeholder="Message" name="" id="text">
             Message
           </textarea>
         </div>

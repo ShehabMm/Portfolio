@@ -1,54 +1,47 @@
 .avatar {
-
   width: 3rem;
-  ;
   height: 3rem;
   border-radius: 50%;
   border: 1px solid darkorange;
   padding: 1;
-
 }
 
-section {
+.sec-1 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: left;
   margin-top: 5rem !important;
-  height: 50vh;
+  margin-bottom: 5rem !important;
+  max-height: 50vh;
   overflow: hidden;
+  overflow: none;
+  width: 90%;
+  position:relative;
+  left: 5%;
+
 }
 
 section .article-p {
-
   padding: 1rem !important;
-
 }
 
 article h2 {
-
   color: var(--title);
   margin-bottom: 2rem !important;
 }
 
 section .Right-section {
-
   border: 2px solid red;
-
-
 }
 
 article p {
-
   margin-bottom: 50px !important;
-
 }
 
 .ico:hover {
-
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   color: goldenrod !important;
-
-
 }

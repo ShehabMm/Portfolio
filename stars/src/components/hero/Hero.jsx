@@ -1,7 +1,7 @@
 import "./Hero.css";
 const Hero = () => {
   return (
-    <section>
+    <section className="sec-1">
       <div className="article-p">
         <img
           className="avatar"
@@ -27,7 +27,6 @@ const Hero = () => {
           </div>
         </article>
       </div>
-
       <div className="Right-section animation">ffgghh</div>
     </section>
   );
