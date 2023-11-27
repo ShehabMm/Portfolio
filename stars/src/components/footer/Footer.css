@@ -1,0 +1,35 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 5.5% !important;
+  margin-bottom: 3rem !important;
+  margin-top: 3rem !important;
+}
+
+footer .Left-links ul {
+  display: flex;
+  gap: 2rem;
+}
+
+footer .Left-links ul li a {
+  letter-spacing: 0.1rem;
+  color:var(--subtitle)
+}
+
+footer .right-side p{
+
+color:var(--subtitle);
+opacity:0.8
+}
+
+@media (max-width: 1000px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin-left: 5.5% !important;
+  }
+}
