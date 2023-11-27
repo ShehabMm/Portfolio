@@ -33,3 +33,24 @@ opacity:0.8
     margin-left: 5.5% !important;
   }
 }
+
+.scroll2up{
+
+  background-color: rgb(30, 152, 152);
+  border-radius: 50%;
+  width: 2.6rem;
+  height: 2.6rem;
+  position:fixed;
+  bottom:2rem;
+  right:3%;
+  text-align: center  ;
+  border:1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.scroll2up:hover{
+
+  background-color: rgb(17, 84, 84);
+
+
+}

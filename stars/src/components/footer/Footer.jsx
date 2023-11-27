@@ -16,6 +16,10 @@ const Footer = () => {
 
       <div className='right-side'>
         <p>2024 Dev Shehab. All rights reserved.</p>
+<a href="#up">  
+        <button className='icon-circle-up scroll2up'>
+        </button>
+        </a>
       </div>
 
 

@@ -9,8 +9,8 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="body">
-      <div className="container">
+    <div className="body" >
+      <div className="container" id="up">
         <Header />
         <div className="divider" />
      <Hero />
