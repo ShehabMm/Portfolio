@@ -11,14 +11,16 @@ const Contact = () => {
           something new.
         </p>
       </article>
+
       <form>
+        <div>
         <label htmlFor="email">Email Address</label>
-        <input
-          required
+        <input required
           type="email"
           id="email"
           placeholder="Email Address"
         ></input>
+        </div>
         <div className="flex">
           <label htmlFor="text">Your message</label>
           <textarea required placeholder="Message" name="" id="text">

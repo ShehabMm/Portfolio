@@ -4,83 +4,89 @@
   gap: 2rem;
   justify-content: center;
   align-items: start;
-  margin-left: 3rem !important;
+  margin-left: 8rem !important;
+  margin-top: 3rem !important;
+  border: 2px solid red;
+  min-height: 50vh;
 }
 
 section article {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  align-items: center;
+  align-items: start;
+  text-align: left;
 }
 
 form {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
   min-width: 450px;
-  height: 100vh;
 }
 
-.Contact article p{
+.Contact article p {
   line-height: 1.65rem;
-  color:var(--subtitle)
+  color: var(--subtitle);
 }
 
-form label{
-  color:var(--subtitle)
+form label {
+  color: var(--subtitle);
 }
 
-form #email, #text{
+form #email,
+#text {
+  all: unset;
+  border: 2px solid rgb(55, 35, 35);
+  background-color: rgb(63, 47, 47);
+  margin-left: 1rem !important;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-size: 1.1rem;
+  width: 300px;
+  color: var(--subtitle);
 
-all:unset;
-border:2px solid rgb(55, 35, 35);
-background-color: rgb(63, 47, 47);
-margin-left:1rem !important;
-border-radius: 5px;
-transition:all 0.3s;
-font-size: 1.1rem;
-width: 300px;
 }
 
-form #email{
-
-  margin-bottom:2rem !important;
+form #email {
+  margin-bottom: 2rem !important;
 }
 
-.flex{
-
-  display:flex;
+form .flex {
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
-form #email:focus, #text:focus{
+form #email:focus,
+#text:focus {
+  border: 2px solid rgb(6, 113, 102);
+}
 
-  border:2px solid rgb(6, 113, 102);
-  }
+form #email:hover,
+#text:hover {
+  border: 2px solid rgb(6, 113, 102);
+}
 
+#text {
+  min-height: 10rem;
+  resize: vertical;
+}
 
-  form #email:hover, #text:hover{
+.submit {
+  color: rgb(136, 136, 136);
+  text-align: center;
+  background-color: rgb(29, 29, 29) !important;
+  padding: 0.3rem !important;
+  width: 150px;
+  border: 1px solid #213547;
+  margin-top: 2.5rem !important;
+  align-self: center;
+  margin-left: 4rem !important;
+}
 
-    border:2px solid rgb(6, 113, 102);
-    }
-
-    #text{
-
-      min-height: 10rem;
-      resize: vertical;
-    }
-
-
-    .submit {
-      color: rgb(136, 136, 136);
-      text-align: center;
-      background-color: rgb(29, 29, 29) !important;
-      padding: 0.3rem !important;
-      width: 150px;
-      border: 1px solid #213547;
-      margin-top: 2.5rem !important;
-    }
-    
-    .submit:hover {
-      color: var(--title);
-      border: 3px solid #30303e;
-    }
+.submit:hover {
+  color: var(--title);
+  border: 3px solid #30303e;
+}
