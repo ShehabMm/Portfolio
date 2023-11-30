@@ -102,7 +102,7 @@ setArr(filter)
                   <a className="linka" href="">
                     more
                   </a>
-                  <span className="icon-arrow-right2"></span>
+                  <div className="icon-arrow-right2"></div>
                 </div>
               </div>
             </article>

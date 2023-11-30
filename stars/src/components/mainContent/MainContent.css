@@ -79,8 +79,10 @@
 
 .links-social {
   display: flex;
+  width: 80%;
+  margin: auto !important;
   justify-content: space-between;
-  margin: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .inner-parts {
