@@ -1,13 +1,15 @@
 .main-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: start;
   width: 90%;
   position: relative;
   left: 5%;
   margin-bottom: 2rem !important;
-  overflow: hidden;
   margin-top: 1rem !important;
+  height: fit-content !important;
+  overflow: auto;
 }
 
 .main-content .right {
