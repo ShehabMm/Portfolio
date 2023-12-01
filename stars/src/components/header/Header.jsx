@@ -33,7 +33,11 @@ setshowModel(!showModel)
           </li>
         </ul>
       </nav>
-      <button className="icon-moon-o"/>
+      <button  onClick={()=>{
+
+console.log('do');
+
+      }}   className="icon-moon-o"/>
 
 {showModel &&               (        <div className="popUp">
 <button className="icon-x"  onClick={()=>{

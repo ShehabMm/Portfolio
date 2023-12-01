@@ -4,7 +4,6 @@
   border-radius: 50%;
   border: 1px solid darkorange;
   padding: 1;
-
 }
 
 .sec-1 {
@@ -15,14 +14,10 @@
   margin-top: 5rem !important;
   margin-bottom: 5rem !important;
   max-height: 50vh;
-  overflow: hidden;
-  overflow: none;
   width: 90%;
   position: relative;
   left: 5%;
-
   font-size: 1.5rem;
-
 }
 
 section .article-p {

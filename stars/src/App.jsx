@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="body" >
-      <div className="container" id="up">
+      <div className="container " id="up">
         <Header />
         <div className="divider" />
      <Hero />
