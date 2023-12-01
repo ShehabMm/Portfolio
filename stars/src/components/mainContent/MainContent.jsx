@@ -3,7 +3,8 @@ import { useState } from "react";
 import { myProject } from "../MyProjects";
 import {useEffect } from 'react'
 
-const MainContent = ({appear, setAppear}) => {
+// eslint-disable-next-line react/prop-types
+const MainContent = ({setAppear}) => {
   const [alter, setAlter] = useState("all");
 
   const [arr, setArr] = useState(myProject);
@@ -20,12 +21,11 @@ if (scrollY > 300){
 }else{
 
   setAppear(false)
-
 }
 
 })
 
-},[])
+},[setAppear])
 
   return (
     <main className="main-content">

@@ -19,11 +19,13 @@ function App() {
         <div className="divider" />
      <Hero />
         <div className="divider" />
-        <MainContent  appear={appear}  setAppear={setAppear}  />
+        <MainContent  
+// @ts-ignore
+        appear={appear}  setAppear={setAppear}  />
         <div className="divider" />
         <Contact />
         <div className="divider" />
-        <Footer appear={appear}  setAppear={setAppear} /> 
+        <Footer appear={appear} /> 
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -1,6 +1,7 @@
 /* eslint-disable no-constant-condition */
 import './Footer.css'
-const Footer = ({appear, setAppear}) => {
+// eslint-disable-next-line react/prop-types
+const Footer = ({appear}) => {
   return (
     <footer>
       <div className='Left-links'>
