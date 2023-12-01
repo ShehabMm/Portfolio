@@ -1,41 +1,50 @@
 import "./MainContent.css";
 import { useState } from "react";
-
-
-const myProject = [{projectTitle:"React project", category:'react', imgPath:"a"}, 
-{projectTitle:"Css project", category:'css', imgPath:"b"},
-{projectTitle:"Mongo project", category:'mongo', imgPath:"c"}
-]
+import { myProject } from "../MyProjects";
+import {useEffect } from 'react'
 
 const MainContent = () => {
   const [alter, setAlter] = useState("all");
 
-  const [arr, setArr] = useState(myProject)
+  const [arr, setArr] = useState(myProject);
+
+
+
+useEffect(()=>{
+
+window.addEventListener("scroll", ()=>{
+
+if (scrollY > 300){
+
+console.log('done')
+
+}
+
+})
+
+},[])
 
   return (
     <main className="main-content">
       <section className="left">
-        <button onClick={()=>{
-setAlter('all')
-
-
-        }}   className={alter==='all'?"active":null}>All Projects</button>
-
-
+        <button
+          onClick={() => {
+            setAlter("all");
+          }}
+          className={alter === "all" ? "active" : null}
+        >
+          All Projects
+        </button>
 
         <button
           onClick={() => {
             setAlter("CSS");
 
+            const filtered = myProject.filter((item) => {
+              return item.category === "css";
+            });
 
-        const filtered = myProject.filter((item)=>{
-
-return item.category ==="css"
-
-            })
-
-            setArr(filtered)
-
+            setArr(filtered);
           }}
           className={alter === "CSS" ? "active" : null}
         >
@@ -53,14 +62,11 @@ return item.category ==="css"
           onClick={() => {
             setAlter("Reactjs");
 
-const filter = myProject.filter((item)=>{
+            const filter = myProject.filter((item) => {
+              return item.category === "react";
+            });
 
-return item.category ==="react"
-
-})
-
-
-setArr(filter)
+            setArr(filter);
           }}
           className={alter === "Reactjs" ? "active" : null}
         >
@@ -77,9 +83,6 @@ setArr(filter)
       </section>
       <section className="right">
         {arr.map((item) => {
-
-
-
           return (
             <article key={item.imgPath}>
               <img
