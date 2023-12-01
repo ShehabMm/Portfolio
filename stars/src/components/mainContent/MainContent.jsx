@@ -3,7 +3,7 @@ import { useState } from "react";
 import { myProject } from "../MyProjects";
 import {useEffect } from 'react'
 
-const MainContent = () => {
+const MainContent = ({appear, setAppear}) => {
   const [alter, setAlter] = useState("all");
 
   const [arr, setArr] = useState(myProject);
@@ -16,7 +16,10 @@ window.addEventListener("scroll", ()=>{
 
 if (scrollY > 300){
 
-console.log('done')
+  setAppear(true)
+}else{
+
+  setAppear(false)
 
 }
 

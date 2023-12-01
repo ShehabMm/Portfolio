@@ -6,8 +6,12 @@ import Hero from "./components/hero/Hero";
 import MainContent from "./components/mainContent/MainContent";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import { useState } from "react";
 
 function App() {
+
+  const [appear, setAppear]= useState(false)
+
   return (
     <div className="body" >
       <div className="container" id="up">
@@ -15,11 +19,11 @@ function App() {
         <div className="divider" />
      <Hero />
         <div className="divider" />
-        <MainContent />
+        <MainContent  appear={appear}  setAppear={setAppear}  />
         <div className="divider" />
         <Contact />
         <div className="divider" />
-        <Footer /> 
+        <Footer appear={appear}  setAppear={setAppear} /> 
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />

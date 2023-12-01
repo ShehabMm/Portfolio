@@ -1,6 +1,6 @@
 /* eslint-disable no-constant-condition */
 import './Footer.css'
-const Footer = () => {
+const Footer = ({appear, setAppear}) => {
   return (
     <footer>
       <div className='Left-links'>
@@ -18,7 +18,7 @@ const Footer = () => {
       <div className='right-side'>
         <p>2024 Dev Shehab. All rights reserved.</p>
 <a href="#up">  
-        <button className='icon-circle-up scroll2up' style={{opacity:false?1:0, transition:'0.3s'}}>
+        <button className='icon-circle-up scroll2up' style={{opacity:appear?1:0, transition:'0.8s'}}>
         </button>
         </a>
       </div>
