@@ -119,9 +119,15 @@ button:focus-visible {
   
 }
 
-.light-mode{
+.light{
 
-  background-color: #fff !important;
+  --primary: #3c040442;
+  --secondary:rgb(222, 23, 23)b(24 24 27);
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --bgheader: rgb(39, 39, 42);
+  --blue:rgb(93,188,252);
 
 }
 
