@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 const Header = () => {
 
 const [showModel, setshowModel] = useState(false);
+
+const [theme, setTheme] = useState("dark")
+
+useEffect(()=>{
+document.body.classList.toggle(theme)
+
+
+},[theme])
+
+
 
   return (
     <header>
@@ -35,7 +45,8 @@ setshowModel(!showModel)
       </nav>
       <button  onClick={()=>{
 
-console.log('do');
+setTheme(theme =='dark'?'light-mode':theme =='light-mode'?'dark':null)
+localStorage.currentMode,('dark')
 
       }}   className="icon-moon-o"/>
 
