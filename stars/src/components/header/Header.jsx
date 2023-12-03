@@ -6,7 +6,21 @@ const Header = () => {
   const [theme, setTheme] = useState(localStorage.getItem("currentMode"));
 
   useEffect(() => {
-    document.body.classList.toggle(theme);
+    if (theme=="dark") {
+      
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+
+
+
+    }else {
+
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+
+
+    }
+
   }, [theme]);
 
   return (
