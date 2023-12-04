@@ -1,11 +1,31 @@
 import "./Contact.css";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm, ValidationError } from "@formspree/react";
+import Lottie from "lottie-react";
+import anima from "../animation/Animation - 1701646190978.json";
+import ani from "../animation/Animation - 1701647715515.json";
 
 const Contact = () => {
-
   const [state, handleSubmit] = useForm("xoqooojy");
 
   return (
+    <div className="main">
+
+<div className="lotti">
+
+<Lottie
+      style={{
+        height: "25rem",
+        opacity:1,
+        transition: "0.8s",
+      }}
+      animationData={ani}
+      loop={true}
+    />
+
+</div>
+
+
+  
     <section className="Contact">
       <article>
         <h1>
@@ -19,20 +39,16 @@ const Contact = () => {
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email" >Email Address</label>
+          <label htmlFor="email">Email Address</label>
           <input
-          required
-          autoComplete="off"
+            required
+            autoComplete="off"
             type="text"
             id="email"
             placeholder="Email Address"
             name="email"
           ></input>
-          <ValidationError
-            prefix="Email"
-            field="email"
-            errors={state.errors}
-          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
         <div className="flex">
           <label htmlFor="text">Your message</label>
@@ -45,12 +61,36 @@ const Contact = () => {
             errors={state.errors}
           />
         </div>
-        <button type="submit" disabled={state.submitting} className="submit">{state.submitting?'Submitting...':"Submit"}</button>
 
+        <button type="submit" disabled={state.submitting} className="submit">
+          {state.submitting ? "Submitting..." : "Submit"}
+        </button>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "left",
+            alignItems: "center",
+          }}
+        >
+          <Lottie
+            style={{
+              height: "5rem",
+              opacity: state.succeeded ? 1 : 0,
+              transition: "0.8s",
+            }}
+            animationData={anima}
+            loop={false}
+          />
 
-        {state.succeeded && (<p style={{ fontSize:'18px', marginTop:"1.7rem" }} >Your message has been sent successfully</p>)}
+          {state.succeeded && (
+            <p style={{ fontSize: "18px", marginTop: "1.7rem" }}>
+              Your message has been sent successfully
+            </p>
+          )}
+        </div>
       </form>
     </section>
+    </div>
   );
 };
 

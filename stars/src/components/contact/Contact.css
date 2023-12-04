@@ -1,3 +1,42 @@
+.main{
+
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+
+}
+.main .lotti{
+
+translate: -160px 140px;
+
+
+}
+
+@media (max-width:1300px){
+
+
+  .main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    }
+
+
+
+    .main .lotti{
+
+      translate:  10px;
+      margin-left: auto;
+      margin-right:auto ;
+
+      
+      }
+}
+
+
+
 .Contact {
   display: flex;
   flex-direction: column;
@@ -88,4 +127,9 @@ form #email:hover,
 .submit:hover {
   color: var(--title);
   border: 3px solid #30303e;
+}
+
+form .animation{
+
+  font-size: 12px;
 }

@@ -10,7 +10,6 @@ header ul li a {
   opacity: 0.9;
   font-size: 0.88rem;
   font-weight: 500;
-
 }
 
 header {
@@ -36,26 +35,17 @@ header ul li a:hover {
   color: var(--blue);
 }
 
-
-@media (max-width:700px) {
+@media (max-width: 700px) {
   header nav {
     display: none;
   }
-
-
 }
 
-@media(min-width:700px) {
+@media (min-width: 700px) {
   header .show {
-
     display: none;
-
   }
-
-
-
 }
-
 
 .popUp {
   border: 2px solid rgb(38, 32, 32);
@@ -67,28 +57,25 @@ header ul li a:hover {
   margin-left: auto;
   margin-right: auto;
   z-index: 50;
-  animation:move 0.7s ; 
-  backdrop-filter:blur(2px) ;
+  animation: move 0.7s;
+  backdrop-filter: blur(2px);
 }
 
 .popUp button {
-
   position: absolute;
   right: 1rem;
-
 }
- 
+
 @keyframes move {
   0% {
-    scale: 0
+    scale: 0;
   }
 
-  60%{
-
-    scale:1.2
+  60% {
+    scale: 1.2;
   }
 
   100% {
-    scale: 1
+    scale: 1;
   }
 }
