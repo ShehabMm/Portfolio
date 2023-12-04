@@ -64,7 +64,6 @@ if (scrollY > 300){
         <button
           onClick={() => {
             setAlter("Reactjs");
-
             const filter = myProject.filter((item) => {
               return item.category === "react";
             });
@@ -96,7 +95,7 @@ if (scrollY > 300){
                 <h1>{item.projectTitle}</h1>
                 <p>
                   This is the bigges project using mongo db and reactjs html css
-                  jsva script{" "}
+                  jsva script
                 </p>
               </div>
               <div className="links-social">
