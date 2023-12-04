@@ -1,22 +1,34 @@
 import "./Hero.css";
 import Lottie from "lottie-react";
 import dev from "../animation/Animation - 1701648553505.json";
+import { addScaleCorrector, motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="sec-1">
       <div className="article-p">
-        <img
+        <motion.img
+          initial={{ transform: "scale(0)" }}
+          animate={{ transform: "scale(1)" }}
+          transition={{ duration: 2, type: "spring", stifness: 100 }}
+
+
+
+
           className="avatar"
           src="https://res.cloudinary.com/dvytkrzaq/image/upload/v1689319406/yes_glmqyd.png"
           alt=""
         />
         <span className="icon-verified"></span>
         <article>
-          <h2>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+          >
             Web Developer
             <br /> using the most recent technologies.
-          </h2>
+          </motion.h2>
 
           <p>
             I am an expert in HTML, CSS, JS, Reactjs,ReduxToolkit,
