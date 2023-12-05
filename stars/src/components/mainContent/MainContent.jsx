@@ -34,6 +34,8 @@ if (scrollY > 300){
         <button
           onClick={() => {
             setAlter("all");
+            setArr(myProject)
+
           }}
           className={alter === "all" ? "active" : null}
         >
