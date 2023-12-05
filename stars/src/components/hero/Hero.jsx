@@ -1,7 +1,7 @@
 import "./Hero.css";
 import Lottie from "lottie-react";
 import dev from "../animation/Animation - 1701648553505.json";
-import { addScaleCorrector, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
         <motion.img
           initial={{ transform: "scale(0)" }}
           animate={{ transform: "scale(1)" }}
-          transition={{ duration: 2, type: "spring", stifness: 100 }}
+          transition={{ damping:6 , type: "spring", stifness: 100 }}
 
 
 

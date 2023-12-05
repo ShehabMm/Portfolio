@@ -2,6 +2,7 @@ import "./MainContent.css";
 import { useState } from "react";
 import { myProject } from "../MyProjects";
 import {useEffect } from 'react'
+import { AnimatePresence, motion } from "framer-motion";
 
 // eslint-disable-next-line react/prop-types
 const MainContent = ({setAppear}) => {
@@ -83,10 +84,16 @@ if (scrollY > 300){
           Node &Express
         </button>
       </section>
-      <section className="right">
+      <section  className="right">
+        <AnimatePresence>
         {arr.map((item) => {
           return (
-            <article key={item.imgPath}>
+            <motion.article 
+            layout 
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            exit={{opacity:0}}
+            key={item.imgPath}>
               <img
                 src="https://res.cloudinary.com/dvytkrzaq/image/upload/v1676312049/samples/ecommerce/leather-bag-gray.jpg"
                 alt=""
@@ -110,9 +117,12 @@ if (scrollY > 300){
                   <div className="icon-arrow-right2"></div>
                 </div>
               </div>
-            </article>
+            </motion.article>
           );
+
         })}
+                  </AnimatePresence>
+
       </section>
     </main>
   );
