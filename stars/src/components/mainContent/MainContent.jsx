@@ -97,8 +97,8 @@ if (scrollY > 300){
             exit={{opacity:0}}
             key={item.imgPath}>
               <img
-                src="https://res.cloudinary.com/dvytkrzaq/image/upload/v1676312049/samples/ecommerce/leather-bag-gray.jpg"
-                alt=""
+                src={item.imgPath}
+                alt="image"
               />
               <div className="box">
                 <h1>{item.projectTitle}</h1>
