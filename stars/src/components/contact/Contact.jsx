@@ -8,7 +8,7 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xoqooojy");
 
   return (
-    <div className="main">
+    <div className="main" id="contact-me">
 
 <div className="lotti">
 

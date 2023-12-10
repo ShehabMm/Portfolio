@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./Header.css";
 const Header = () => {
   const [showModel, setshowModel] = useState(false);
-
   const [theme, setTheme] = useState(localStorage.getItem("currentMode"));
 
   useEffect(() => {
@@ -37,19 +36,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href="">about</a>
+            <a href="#hero">About</a>
           </li>
           <li>
-            <a href="">Articles</a>
+            <a href="#pro">Projects</a>
           </li>
           <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a href="#down">Contact</a>
           </li>
         </ul>
       </nav>
@@ -88,8 +81,9 @@ const Header = () => {
               <a href="">Speaking</a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="#down">Contact</a>
             </li>
+
           </ul>
         </div>
       )}

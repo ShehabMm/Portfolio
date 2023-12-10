@@ -11,7 +11,6 @@ const MainContent = ({setAppear}) => {
   const [arr, setArr] = useState(myProject);
 
 
-
 useEffect(()=>{
 
 window.addEventListener("scroll", ()=>{
@@ -47,7 +46,7 @@ if (scrollY > 300){
             setAlter("CSS");
 
             const filtered = myProject.filter((item) => {
-              return item.category === "css";
+              return item.category === "Html";
             });
 
             setArr(filtered);
@@ -59,6 +58,13 @@ if (scrollY > 300){
         <button
           onClick={() => {
             setAlter("Javascript");
+const filter = myProject.filter((item)=>{
+
+return item.category ==="js"
+
+})
+setArr(filter);
+
           }}
           className={alter === "Javascript" ? "active" : null}
         >
@@ -80,10 +86,17 @@ if (scrollY > 300){
         <button
           onClick={() => {
             setAlter("Node");
+const filter = myProject.filter((item)=>{
+
+return item.category === "wordpress"
+})
+setArr(filter)
+
+
           }}
           className={alter === "Node" ? "active" : null}
         >
-          Node &Express
+          Wordpress
         </button>
       </section>
       <section  className="right">
@@ -103,22 +116,21 @@ if (scrollY > 300){
               <div className="box">
                 <h1>{item.projectTitle}</h1>
                 <p>
-                  This is the bigges project using mongo db and reactjs html css
-                  jsva script
+                  {item.details}
                 </p>
               </div>
+            
               <div className="links-social">
                 <div className="inner-parts">
-                  <div className="icon-link"></div>
-                  <div className="icon-github"></div>
-                </div>
-                <div className="arrow20">
-                  <a className="linka" href="">
-                    more
+                  <a className="icon-link" href={item.site}>
+
+
                   </a>
-                  <div className="icon-arrow-right2"></div>
+
+                  <a href="https://github.com/ShehabMm" className="icon-github"></a>
                 </div>
               </div>
+          
             </motion.article>
           );
 

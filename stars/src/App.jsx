@@ -9,23 +9,36 @@ import Footer from "./components/footer/Footer";
 import { useState } from "react";
 
 function App() {
-
-  const [appear, setAppear]= useState(false)
+  const [appear, setAppear] = useState(false);
 
   return (
-    <div className="body" >
+    <div className="body">
       <div className="container " id="up">
         <Header />
+        <div className="divider"  id="hero"/>
+        <Hero />
+        <div className="divider" id="pro" />
+        <MainContent
+          // @ts-ignore
+          appear={appear}
+          setAppear={setAppear}
+        />
         <div className="divider" />
-     <Hero />
+<div id="down">
+        <Contact    />
+
+        </div>
         <div className="divider" />
-        <MainContent  
-// @ts-ignore
-        appear={appear}  setAppear={setAppear}  />
-        <div className="divider" />
-        <Contact />
-        <div className="divider" />
-        <Footer appear={appear} /> 
+        <div >
+          <Footer appear={appear} />
+        </div>
+
+
+
+
+
+
+
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
