@@ -174,3 +174,13 @@ linka:hover {
     display: none;
   }
 }
+
+
+@media (max-width:500px){
+.main-content .right{
+position:relative;
+top: 80px ;
+border:2px solid red;
+  }
+
+}

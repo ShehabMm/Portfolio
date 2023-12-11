@@ -14,13 +14,13 @@ footer .Left-links ul {
 
 footer .Left-links ul li a {
   letter-spacing: 0.1rem;
-  color:var(--subtitle)
+  color: var(--subtitle)
 }
 
-footer .right-side p{
+footer .right-side p {
 
-color:var(--subtitle);
-opacity:0.8
+  color: var(--subtitle);
+  opacity: 0.8
 }
 
 @media (max-width: 1000px) {
@@ -34,23 +34,32 @@ opacity:0.8
   }
 }
 
-.scroll2up{
+.scroll2up {
 
   background-color: rgb(30, 152, 152);
   border-radius: 50%;
   width: 2.6rem;
   height: 2.6rem;
-  position:fixed;
-  bottom:2rem;
-  right:3%;
-  text-align: center  ;
-  border:1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
 }
 
-.scroll2up:hover{
+.scroll2up:hover {
 
   background-color: rgb(17, 84, 84);
 
-
 }
+
+  @media (max-width:500px) {
+
+    .Left-links {
+
+      display: none
+    }
+
+
+  }

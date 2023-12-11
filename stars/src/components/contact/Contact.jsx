@@ -38,7 +38,7 @@ const Contact = () => {
       </article>
 
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="con">
           <label htmlFor="email">Email Address</label>
           <input
             required

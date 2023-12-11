@@ -1,41 +1,26 @@
-.main{
-
-display: flex;
-flex-direction: row-reverse;
-justify-content: space-between;
-
-}
-.main .lotti{
-
-translate: -160px 140px;
-
-
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
-@media (max-width:1300px){
+.main .lotti {
+  translate: -160px 140px;
+}
 
-
-  .main{
-
+@media (max-width: 1300px) {
+  .main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    }
+  }
 
-
-
-    .main .lotti{
-
-      translate:  10px;
-      margin-left: auto;
-      margin-right:auto ;
-
-      
-      }
+  .main .lotti {
+    translate: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-
 
 .Contact {
   display: flex;
@@ -84,7 +69,6 @@ form #email,
   font-size: 1.1rem;
   width: 300px;
   color: var(--subtitle);
-
 }
 
 form #email {
@@ -129,7 +113,49 @@ form #email:hover,
   border: 3px solid #30303e;
 }
 
-form .animation{
-
+form .animation {
   font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  .main .lotti {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+
+
+  .Contact article {
+    display: none;
+  }
+
+  section form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 100px;
+    align-self: center;
+    translate: -60px;
+
+  }
+
+  section form .flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+  section form .con {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
