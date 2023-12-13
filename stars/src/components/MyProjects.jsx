@@ -2,7 +2,7 @@ export const myProject = [
 
 
   {
-    projectTitle: "A movie App-ReduxToolkit-Auth",
+    projectTitle: "A movie App",
     category: "react",
     imgPath:"https://res.cloudinary.com/dvytkrzaq/image/upload/v1702054389/movie_tjilp6.jpg",
     details:"A movie App that consists of many pages with backend. I used ReduxToolkit and Mongodb in this project. Authentication for users.",
@@ -67,7 +67,7 @@ export const myProject = [
     projectTitle: "Mern-Stack E-commerce",
     category: "react",
     imgPath: "https://res.cloudinary.com/dvytkrzaq/image/upload/v1702052825/Accessibility-for-your-Online-eCommerce-Store-1024x538_nuella.jpg",
-    details:"1-Functional and engaging customer experience using HTML CSS, React, MUI. 2- using RTK query to fetch data from API. 3- Email JS.and React Hook Form. 4- A user-friendly website for both desktop and mobile. 5- Accounting total price automatically with the possibility to remove, edit or add items.",
+    details:"Functional and engaging customer experience using HTML CSS, React, MUI.using RTK query.Email JS.",
     site:"https://curious-seahorse-29da21.netlify.app/"
   },  {
     projectTitle: "Personal Portfolio",
