@@ -47,6 +47,7 @@ form {
   justify-content: start;
   align-items: start;
   min-width: 450px;
+  position:relative;
 }
 
 .Contact article p {
@@ -96,6 +97,18 @@ form #email:hover,
   resize: vertical;
 }
 
+section form .btn-parent{
+
+width: 20vw;
+position:absolute;
+bottom:20px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
 .submit {
   color: rgb(136, 136, 136);
   text-align: center;
@@ -104,8 +117,7 @@ form #email:hover,
   width: 150px;
   border: 1px solid #213547;
   margin-top: 2.5rem !important;
-  align-self: center;
-  margin-left: 4rem !important;
+
 }
 
 .submit:hover {
@@ -134,8 +146,8 @@ form .animation {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     min-width: 100px;
     align-self: center;
     translate: -60px;

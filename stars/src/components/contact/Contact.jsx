@@ -61,10 +61,11 @@ const Contact = () => {
             errors={state.errors}
           />
         </div>
-
+<div className="btn-parent">
         <button type="submit" disabled={state.submitting} className="submit">
           {state.submitting ? "Submitting..." : "Submit"}
         </button>
+        </div>
         <div
           style={{
             display: "flex",
