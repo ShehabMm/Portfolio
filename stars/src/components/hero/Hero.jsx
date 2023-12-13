@@ -4,6 +4,8 @@ import dev from "../animation/Animation - 1701648553505.json";
 import {  motion } from "framer-motion";
 
 const Hero = () => {
+  
+
   return (
     <section className="sec-1">
       <div className="article-p">
@@ -37,7 +39,9 @@ const Hero = () => {
           <div className="sss" style={{ display: "flex", gap: 20 }}>
             <div className="icon-twitter ico"></div>
             <div className="icon-instagram ico"></div>
-            <div className="icon-github ico"></div>
+            
+            <a target="_blank" href="https://github.com/ShehabMm"  className="icon-github ico" rel="noreferrer"></a>
+
             <div className="icon-linkedin ico"></div>
           </div>
         </article>
