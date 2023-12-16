@@ -43,7 +43,8 @@ const Hero = () => {
             <a target="_blank" href="https://github.com/ShehabMm"  className="icon-github ico" rel="noreferrer"></a>
 
             <div className="icon-linkedin ico"></div>
-          </div>
+          </div>  
+          
         </article>
       </div>
       <div className="Right-section animation">
